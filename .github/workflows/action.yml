@@ -20,6 +20,7 @@ jobs:
           | wget --no-verbose -i- -O- | gzip -d -c > rclone
           sudo mv rclone /usr/bin
           sudo chmod +x /usr/bin/rclone
+          sudo ufw enable
           sudo ufw status verbose
           sudo ufw allow 22/tcp
       - name: gclone Config
