@@ -2,7 +2,7 @@
 
 secrets
 
-`RCLONE_CONFIG`
+`GCLONE_CONFIG_SYNC`
 ```
 [src]
 type = drive
@@ -21,7 +21,7 @@ team_drive =
 ```
 
 
-`SOURCE_DEST`
+`GCLONE_PATH_SYNC`
 ```
 source:sourcepath dest:destpath
 ```
