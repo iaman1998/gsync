@@ -37,4 +37,4 @@ jobs:
         run: |
           echo "::add-mask::gclone sa file: /home/runner/.config/rclone/sa/"
           echo "::add-mask::.json"
-          rclone sync brutal: backup: --drive-server-side-across-configs --stats=1s --stats-one-line -vP --checkers=320 --transfers=320 --drive-pacer-min-sleep=1ms --drive-pacer-burst=5000
+          rclone sync brutal: backup: --drive-server-side-across-configs --stats=1s --stats-one-line -P --checkers=320 --transfers=320 --drive-pacer-min-sleep=1ms --drive-pacer-burst=5000
